@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/main.css">
+    <script src="https://kit.fontawesome.com/c1b35aaca6.js" crossorigin="anonymous"></script>
     <title>PaddleVzla</title>
 </head>
 <body>
+    <div id="contenedor-carga">
+        <div id="contenedor-carga__thumb"></div>
+    </div>
     <header>
         <div class="header">
-            <a href="#" class="header__a">RUTAS</a>
-            <a href="index.html" class="header__a" id="logo"><img src="img/logo2.jpeg" alt="PaddleVZLA"></a>
-            <a href="#" class="header__a">CONTACT</a>
-        </div>
+        <a href="index.html" class="logo"><img src="img/logo2.jpeg" alt="PaddleVZLA"></a>
+        <input type="checkbox" id="check">
+		<label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+		<label for="check" id="close"><i class="fa-solid fa-xmark"></i></label>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#rutas" class="header__a">RUTAS</a></li>
+                <li><a href="#contact" class="header__a">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
         <div class="slider">
             <div class="slider-contenedor">
                 <section id="section1" class="ctn-slider">
@@ -45,6 +56,43 @@
         </article>
         <article class="reserve">
             <h2 class="reserve__h2">¡RESERVA TU EXPERIENCIA!</h2>
+            <a href="#" class="reserve__a">TOCA AQUÍ</a>
+        </article>
+        <article id="rutas">
+            <h2 class="rutas__h2">RUTAS</h2>
+            <div class="cards">
+                <div class="card card1">
+                    <div class="card__info">
+                        <h3>MANZANILLO</h3>
+                        <p>NIVEL : MEDIO<br>8KM</p>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <div class="card__info">
+                        <h3>MANZANILLO</h3>
+                        <p>NIVEL : MEDIO<br>8KM</p>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <div class="card__info">
+                        <h3>MANZANILLO</h3>
+                        <p>NIVEL : MEDIO<br>8KM</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="contact">
+            <h3>CONTACTO</h3>
+            <div class="form">
+            <form action="https://formspree.io/fxzzpbzeg" method="POST">
+                <label>Nombre<input type="email" name="email">
+                </label>
+                <label>Email<input type="email" name="email">
+                </label>
+                <label>Mensaje<textarea name="message"></textarea></label>
+                <button class="enviar" type="submit">ENVIAR</button>
+            </form>
+            </div>
         </article>
     </section>
     <script src="js/main.js"></script>
