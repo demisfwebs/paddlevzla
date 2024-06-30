@@ -336,6 +336,7 @@
 	align-items: center;}
 
 .reserve__h2{
+	text-align: center;
 	font-size: 26px;
 	color: var(--white-clr);
 	font-weight: 400;}	
