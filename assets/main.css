@@ -563,8 +563,11 @@ footer .contenedor{
 	font-weight: 500;}
 
 .sub-foot a{
-	color: var(--second-clr);
-}
+	color: var(--second-clr);}
+
+@media (max-width: 768px){
+	.card__info{
+		height: 14%;}}
 
 @media (max-width: 635px){
     
