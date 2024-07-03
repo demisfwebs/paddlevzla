@@ -100,18 +100,19 @@
 @media (max-width: 768px){
 
 	.header{
+		height: 88px;
 		z-index: 200;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;}
 
 	.logo{
-		width: 45px;
-		height: 45px;}
+		width: 70px;
+		height: 70px;}
 
 	.logo img{
-		width: 45px;
-		height: 45px;
+		width: 70px;
+		height: 70px;
 		position: relative;
 		top: auto;
 		padding: 0;
@@ -125,7 +126,7 @@
 		transform: translateY(10px);}
 
 	#checkbtn i, #close i{
-		font-size: 24px;
+		font-size: 32px;
 		color: var(--main-clr);}
 
 	.nav-bar{
@@ -159,7 +160,7 @@
 		color: var(--second-clr);}
 
 	#check:checked ~ .nav-bar{
-		top: 60px;
+		top: 85px;
 		transition: .3s;}
 		
 	#check:checked ~ #checkbtn{
@@ -236,14 +237,14 @@
     background-position: center;}
 
 #section2{
-	background: url(../img/img2.png);
+	background: url(../img/img3.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
     background-position: center;}
 
 #section3{
-	background: url(../img/img3.png);
+	background: url(../img/img2.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -324,7 +325,7 @@
 .reserve{
 	width: 100%;
 	padding: 70px;
-	background: linear-gradient(120deg, rgba(2, 61, 79, 0.7) 0%, rgba(95, 205, 159, 0.5) 100%), url(../img/img1.png);
+	background: linear-gradient(120deg, rgba(2, 61, 79, 0.7) 0%, rgba(95, 205, 159, 0.5) 100%), url(../img/constanza.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -344,15 +345,15 @@
 .reserve__a{
 	text-decoration: none;
 	border: 2px solid var(--second-clr);
-	color: var(--white-clr);
+	color: var(--main-clr);
 	background: var(--second-clr);
 	padding: 15px 65px;
 	transition: .3s;
+	font-weight: 500;
 	border-radius: 6px;}
 
 .reserve__a:hover{
 	background: transparent;
-
 	border: 2px solid var(--main-clr);}
 
 #rutas{
@@ -401,6 +402,27 @@
 
 .card__info p{
 	text-align: center;}
+
+.card1{
+	background-image: url(../img/manzanillo.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+    background-position: center;}
+
+.card2{
+	background-image: url(../img/concorde.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+    background-position: center;}
+
+.card3{
+	background-image: url(../img/constanza2.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+    background-position: center;}
 
 #contact{
 	padding-top: 20px;
@@ -462,6 +484,76 @@
 	background: transparent;
 	color: var(--main-clr);
 	border: 2px solid var(--main-clr);}
+
+footer{
+	width: 100%;
+	background: var(--second-clr);}
+
+footer .contenedor{
+	width: 100%;
+	gap: 30px 0;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 120px 80px;
+	justify-content: center;}
+
+.sides{
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;}
+
+.sides .button{
+	text-decoration: none;
+	font-weight: 600;
+	padding: 10px 14px;
+	border: 2px solid var(--main-clr);
+	border-radius: 12px;
+	background: var(--main-clr);
+	color: var(--second-clr);
+	transition: .3s;
+	margin: 12px;}
+
+.sides .button:hover{
+	background: transparent;
+	color: var(--main-clr);}
+
+.sides p{
+	text-align: center;
+	width: 250px;
+	font-size: 20px;
+	color: #fff;}
+
+.sides .socials{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	align-items: center;
+	flex-direction: column;}
+
+.social p{
+	font-weight: 600;}
+
+.social a{
+	margin: 5px 0;
+	display: block;
+	text-decoration: none;
+	color: var(--main-clr);
+	font-size: 28px;
+	text-align: center;
+	transition: .3s;}
+
+.social a:hover{
+	transform: translateY(-5px);}
+
+.sub-foot{
+	background: var(--main-clr);
+	color: var(--second-clr);
+	padding: 12px;
+	text-align: center;
+	font-weight: 500;}
 
 @media (max-width: 635px){
     
